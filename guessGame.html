@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Find the numbers!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="bootstrap/Cerulean.css">
-        <link rel="stylesheet" href="guessGame.css">
-        <style>
-           @import 'https://fonts.googleapis.com/css?family=Indie+Flower';
-        </style>
-    </head>
-    <body>
-        <h3>Test Your Luck!</br> </br>
-            This game of chance and skill will hide from you, three numbers (0-9), behind white fields.</br>
-            Guess these numbers in the fields below! One Per Field!</br>
-            If your guess is correct, your number will come back Green! If your guess is wrong it will come back Red! If your guess is in one of the fields, just not the field you placed it in; your number will come back yellow!</br></br></h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
-            
-            
-           
-        <div class="container">
-            <div class="row"> 
-                <div class="col-md-3 column"> 
-                    <h2 id="results1"></h2>
-                    <input id="field1" type="number" min="0" max="9" placeholder="0" maxlength="1" class="guess">
-                </div>
-                <div class="col-md-3 column">
-                    <h2 id="results2"></h2>
-                    <input id="field2" type="number" min="0" max="9" placeholder="0" maxlength="1" class="guess">
-                    <button class="Testing Testing2 Testing3 btn btn-info button">Test Your Luck</button>
-                </div>
-                <div class="col-md-3 column">
-                    <h2 id="results3"></h2>
-                    <input id="field3" type="number" min="0" max="9" maxlength="1" placeholder="0" class="guess">
-                </div>             
+
+<head>
+    <title>Find the numbers!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/Cerulean.css">
+    <link rel="stylesheet" href="guessGame.css">
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+    </style>
+</head>
+
+<body>
+    <h3>Test Your Luck!</br>
+        </br>
+        This game of chance and skill will hide from you, three numbers (0-9), behind white fields.</br>
+        Guess these numbers in the fields below! One Per Field!</br>
+        If your guess is correct, your number will come back Green! If your guess is wrong it will come back Red! If your guess is
+        in one of the fields, just not the field you placed it in; your number will come back yellow!</br>
+        </br>
+    </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 id="tries"></h3>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 column">
+                <h2 id="results1"></h2>
+                <input id="field1" type="tel" placeholder="0" maxlength="1" class="guess" onkeypress="return isNumberKey(event)">
+            </div>
+            <div class="col-md-3 column">
+                <h2 id="results2"></h2>
+                <input id="field2" type="tel" maxlength="1" placeholder="0" class="guess" onkeypress="return isNumberKey(event)">
+                <button class="Testing Testing2 Testing3 btn btn-info button">Test Your Luck</button>
+            </div>
+            <div class="col-md-3 column">
+                <h2 id="results3"></h2>
+                <input id="field3" type="tel" maxlength="1" placeholder="0" class="guess" onkeypress="return isNumberKey(event)">
             </div>
         </div>
-        
+    </div>
 
 
 
@@ -52,8 +57,10 @@
 
 
 
-        <script src="jquery-3.1.0 (1).js"></script>
-        <script src="bootstrap/js/bootstrap.js"></script>
-        <script src="guessGame.js"></script>
-    </body>
+
+    <script src="jquery-3.1.0 (1).js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="guessGame.js"></script>
+</body>
+
 </html>

@@ -58,3 +58,9 @@ body{
     margin-left: 155px;
     margin-bottom: 0;
 }
+
+#tries{
+    font-family: Impact;
+    font-size: 60pt;
+    color: white;
+}
